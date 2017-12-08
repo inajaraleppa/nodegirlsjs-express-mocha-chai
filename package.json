@@ -1,8 +1,10 @@
 {
   "name": "coffee-recipes",
   "description": "Testing express with mocha and chai",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "dependencies": {
     "express": "^4.16.2",
@@ -20,11 +22,12 @@
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "supertest": "^1.2.0"
   },
   "author": "Inajara Leppa e Julia Naomi",
   "directories": {
     "test": "test",
-    "lib": "src"
+    "lib": "routes"
   }
 }
