@@ -1,3 +1,6 @@
+require('babel-core/register');
+require('babel-polyfill');
+
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
